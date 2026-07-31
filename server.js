@@ -44,8 +44,10 @@ async function getAuthClient() {
 }
 
 // Home Route
-app.get("/", (req, res) => {
-  res.send("Capsiddhi Backend Server Active!");
+app.use(express.static(__dirname));
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // Google Authorization
