@@ -1,0 +1,26 @@
+{
+  "name": "capsiddhi-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@google-cloud/local-auth": "^3.0.1",
+    "cors": "^2.8.6",
+    "cros": "^1.1.0",
+    "csv-parser": "^3.2.1",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "googleapis": "^173.0.0",
+    "mime-types": "^3.0.2",
+    "multer": "^2.2.0",
+    "nodemailer": "^9.0.3",
+    "xlsx": "^0.18.5"
+  }
+}

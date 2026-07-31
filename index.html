@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capsiddhi | The Attainment of Wealth</title>
+<meta name="description" content="Capsiddhi — the attainment of wealth. A conceptual blending of a wealth creation philosophy with Siddhi, representing fulfillment and mastery. Connecting you to India's best loan and financial solutions.">
+
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --navy-deep:   #081324;
+    --navy:        #0b1a30;
+    --navy-mid:    #0d2c54;
+    --navy-line:   rgba(255,255,255,0.08);
+    --gold:        #c2a649;
+    --gold-light:  #e8cc78;
+    --ivory:       #f4efe4;
+  }
+  html{ scroll-behavior:smooth; }
+  body{
+    background:var(--navy);
+    font-family:'Inter',sans-serif;
+  }
+  .font-display{ font-family:'Fraunces', serif; font-optical-sizing:auto; }
+  ::-webkit-scrollbar{ width:8px; }
+  ::-webkit-scrollbar-track{ background:var(--navy-deep); }
+  ::-webkit-scrollbar-thumb{ background:var(--gold); border-radius:4px; }
+
+  @media (prefers-reduced-motion: no-preference){
+    .wave-1{ animation:drift-a 24s ease-in-out infinite alternate; }
+    .wave-2{ animation:drift-b 28s ease-in-out infinite alternate; }
+    .emblem-glow{ animation:glow 3.2s ease-in-out infinite; }
+    .reveal{ opacity:0; transform:translateY(16px); transition:opacity .7s ease, transform .7s ease; }
+    .reveal.in{ opacity:1; transform:translateY(0); }
+  }
+  @keyframes drift-a{ 0%{transform:translate(-8%,-6%) scale(1)} 100%{transform:translate(10%,12%) scale(1.15)} }
+  @keyframes drift-b{ 0%{transform:translate(8%,10%) scale(1.1)} 100%{transform:translate(-10%,-8%) scale(0.95)} }
+  @keyframes glow{ 0%,100%{ filter:drop-shadow(0 0 6px rgba(194,166,73,.25)) } 50%{ filter:drop-shadow(0 0 18px rgba(194,166,73,.55)) } }
+
+  #preloader{
+    position:fixed; inset:0; background:var(--navy-deep); z-index:9999;
+    display:flex; align-items:center; justify-content:center;
+    transition:opacity .5s ease, visibility .5s ease;
+  }
+
+  .focus-gold:focus-visible{ outline:2px solid var(--gold); outline-offset:2px; }
+
+  .card-loan{
+    background:linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.015));
+  }
+
+  .divider-emblem{
+    background:
+      linear-gradient(90deg, transparent, var(--navy-line) 20%, var(--navy-line) 80%, transparent);
+    height:1px;
+  }
+</style>
+</head>
+<body class="text-ivory antialiased overflow-x-hidden" style="color:#eef1f6;">
+
+<!-- PRELOADER -->
+<div id="preloader" aria-hidden="true">
+  <div class="flex flex-col items-center gap-4">
+    <svg class="emblem-glow" width="56" height="56" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M50 4 L92 50 L50 96 L8 50 Z" stroke="#c2a649" stroke-width="2.5"/>
+      <path d="M50 22 C66 22 78 34 78 50 C78 66 66 78 50 78" stroke="#e8cc78" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="50" cy="50" r="6" fill="#c2a649"/>
+    </svg>
+    <span class="font-display text-lg tracking-[0.2em] text-white/90 uppercase">Capsiddhi</span>
+  </div>
+</div>
+
+<!-- AMBIENT BACKGROUND -->
+<div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+  <div class="wave-1 absolute -top-32 -left-32 w-[560px] h-[560px] rounded-full blur-[130px] opacity-30" style="background:radial-gradient(circle,#123a6e,transparent 70%)"></div>
+  <div class="wave-2 absolute top-1/3 -right-32 w-[480px] h-[480px] rounded-full blur-[110px] opacity-25" style="background:radial-gradient(circle,#1a4d8f,transparent 70%)"></div>
+  <div class="wave-1 absolute bottom-[-120px] left-1/4 w-[420px] h-[420px] rounded-full blur-[140px] opacity-[0.12]" style="background:radial-gradient(circle,#c2a649,transparent 70%)"></div>
+</div>
+
+<!-- NAV -->
+<nav class="sticky top-0 z-50 border-b" style="background:rgba(8,19,36,0.75); backdrop-filter:blur(14px); border-color:var(--navy-line);">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-3 focus-gold rounded">
+      <svg width="34" height="34" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M50 4 L92 50 L50 96 L8 50 Z" stroke="#c2a649" stroke-width="4"/>
+        <path d="M50 22 C66 22 78 34 78 50 C78 66 66 78 50 78" stroke="#e8cc78" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="50" cy="50" r="7" fill="#c2a649"/>
+      </svg>
+      <span class="font-display text-xl font-semibold tracking-wide text-white">Capsiddhi</span>
+    </a>
+    <div class="hidden md:flex items-center gap-8 text-sm font-medium text-white/60">
+      <a href="#loans" class="hover:text-[var(--gold-light)] transition">Loan Products</a>
+      <a href="#about" class="hover:text-[var(--gold-light)] transition">About Us</a>
+      <a href="#why" class="hover:text-[var(--gold-light)] transition">Why Us</a>
+      <a href="#contact" class="hover:text-[var(--gold-light)] transition">Contact</a>
+      <a href="#faq" class="hover:text-[var(--gold-light)] transition">FAQs</a>
+    </div>
+    <a href="#apply" class="focus-gold rounded-full px-5 py-2.5 text-sm font-semibold text-[#0b1a30] shadow-lg transition hover:-translate-y-0.5" style="background:linear-gradient(90deg,var(--gold),var(--gold-light));">
+      Apply Now
+    </a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="relative px-6 py-20 md:py-28">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-14 items-center">
+    <div class="space-y-7">
+      <span class="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold tracking-wide border" style="background:rgba(194,166,73,0.1); border-color:rgba(194,166,73,0.3); color:var(--gold-light);">
+        SIDDHI — fulfillment &amp; mastery
+      </span>
+      <h1 class="font-display text-4xl md:text-6xl leading-[1.05] text-white">
+        Capsiddhi
+        <span class="block text-transparent bg-clip-text mt-1" style="background-image:linear-gradient(90deg,var(--gold),var(--gold-light)); -webkit-background-clip:text;">
+          The Attainment of Wealth
+        </span>
+      </h1>
+      <p class="text-white/65 text-lg leading-relaxed max-w-xl">
+        Capsiddhi blends a wealth-creation philosophy with <span class="text-[var(--gold-light)] font-semibold">Siddhi</span> — fulfillment, mastery, and attainment. We connect you to India's most trusted banks and NBFCs for the loan that fits your life.
+      </p>
+      <div class="flex flex-wrap gap-4 pt-2">
+        <a href="#loans" class="focus-gold rounded-lg px-7 py-3.5 font-semibold text-[#0b1a30] shadow-lg transition hover:-translate-y-0.5" style="background:linear-gradient(90deg,var(--gold),var(--gold-light));">
+          Explore Loan Products
+        </a>
+        <a href="#apply" class="focus-gold rounded-lg px-7 py-3.5 font-medium text-white border border-white/20 hover:border-white/50 transition">
+          Check Eligibility
+        </a>
+      </div>
+      
+      <div class="pt-6 border-t flex flex-wrap gap-8" style="border-color:var(--navy-line);">
+        <div><span class="block font-display text-2xl text-[var(--gold-light)]">Top</span><span class="text-xs text-white/50">Partner Banks &amp; NBFCs</span></div>
+        <div><span class="block font-display text-2xl text-[var(--gold-light)]">100%</span><span class="text-xs text-white/50">Safe & Secure Process</span></div>
+        <div><span class="block font-display text-2xl text-[var(--gold-light)]">Instant</span><span class="text-xs text-white/50">Digital Lead Setup</span></div>
+      </div>
+    </div>
+
+    <!-- APPLY FORM -->
+    <div id="apply" class="relative rounded-3xl border p-8 shadow-2xl scroll-mt-24" style="background:rgba(255,255,255,0.035); border-color:var(--navy-line); backdrop-filter:blur(20px);">
+      <form id="loanForm" class="space-y-5" novalidate>
+        <div class="text-center pb-1">
+          <h3 class="font-display text-2xl text-white">Free Consultation</h3>
+          <p class="text-xs text-white/45 mt-1">Takes less than 60 seconds</p>
+        </div>
+
+        <div>
+          <label for="fullName" class="block text-sm font-medium text-white/70 mb-1.5">Full Name</label>
+          <input type="text" id="fullName" name="fullName" required minlength="2" placeholder="Enter your full name"
+                 class="focus-gold w-full px-4 py-3 rounded-lg text-white placeholder-white/30 text-sm border"
+                 style="background:rgba(255,255,255,0.04); border-color:var(--navy-line);">
+          <p class="field-error hidden text-xs text-red-400 mt-1">Please enter your name.</p>
+        </div>
+
+        <div>
+          <label for="mobileNumber" class="block text-sm font-medium text-white/70 mb-1.5">Mobile Number</label>
+          <input type="tel" id="mobileNumber" name="mobileNumber" required pattern="[6-9][0-9]{9}" placeholder="10-digit mobile number"
+                 class="focus-gold w-full px-4 py-3 rounded-lg text-white placeholder-white/30 text-sm border"
+                 style="background:rgba(255,255,255,0.04); border-color:var(--navy-line);">
+          <p class="field-error hidden text-xs text-red-400 mt-1">Enter a valid 10-digit mobile number.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label for="loanAmount" class="block text-sm font-medium text-white/70 mb-1.5">Required Amount (₹)</label>
+            <input type="number" id="loanAmount" name="loanAmount" required min="10000" placeholder="e.g. 500000"
+                   class="focus-gold w-full px-4 py-3 rounded-lg text-white placeholder-white/30 text-sm border"
+                   style="background:rgba(255,255,255,0.04); border-color:var(--navy-line);">
+            <p class="field-error hidden text-xs text-red-400 mt-1">Enter a valid amount.</p>
+          </div>
+          <div>
+            <label for="loanType" class="block text-sm font-medium text-white/70 mb-1.5">Loan Type</label>
+            <select id="loanType" name="loanType" required
+                    class="focus-gold w-full px-4 py-3 rounded-lg text-white text-sm border [&>option]:bg-[#0b1a30]"
+                    style="background:rgba(255,255,255,0.04); border-color:var(--navy-line);">
+              <option value="" disabled selected>Choose loan</option>
+              <option value="Business Loan">Business Loan</option>
+              <option value="Home Loan">Home Loan</option>
+              <option value="Personal Loan">Personal Loan</option>
+              <option value="Loan Against Property">Loan Against Property</option>
+            </select>
+            <p class="field-error hidden text-xs text-red-400 mt-1">Please select a loan type.</p>
+          </div>
+        </div>
+
+        <button type="submit" id="submitBtn"
+                class="focus-gold w-full py-4 rounded-lg font-bold text-[#0b1a30] shadow-lg transition hover:-translate-y-0.5 text-sm disabled:opacity-60"
+                style="background:linear-gradient(90deg,var(--gold),var(--gold-light));">
+          Get Free Consultation →
+        </button>
+
+        <p id="formStatus" role="status" aria-live="polite" class="text-center text-xs text-white/50 min-h-[1rem]"></p>
+      </form>
+
+      <div id="successMessage" class="hidden text-center py-10 space-y-4">
+        <div class="inline-flex items-center justify-center w-16 h-16 rounded-full text-2xl font-bold" style="background:rgba(52,211,153,0.15); color:#34d399; border:1px solid rgba(52,211,153,0.3);">✓</div>
+        <h3 class="font-display text-2xl text-white">Thank you, <span id="userName"></span>!</h3>
+        <p class="text-white/60 text-sm max-w-sm mx-auto">
+          Your application for a <span id="selectedLoan" class="font-semibold text-[var(--gold-light)]"></span> has been received. Our team will call you on <span id="userPhone" class="font-semibold text-white"></span> shortly.
+        </p>
+        <button id="resetBtn" class="focus-gold mt-2 px-6 py-2 rounded-lg border border-white/20 text-white text-sm hover:bg-white/10 transition">
+          Submit Another Inquiry
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="max-w-6xl mx-auto px-6"><div class="divider-emblem"></div></div>
+
+<!-- LOAN PRODUCTS -->
+<main id="loans" class="max-w-6xl mx-auto py-20 px-6 scroll-mt-24">
+  <div class="text-center max-w-2xl mx-auto mb-14">
+    <span class="text-xs font-semibold tracking-[0.2em] text-[var(--gold-light)] uppercase">Loan Products</span>
+    <h2 class="font-display text-3xl md:text-4xl text-white mt-3">Retail &amp; Corporate Financing</h2>
+    <p class="text-white/55 mt-3">Tailored financial products, matched to your goals, sourced from our banking partner network.</p>
+  </div>
+
+  <div class="grid md:grid-cols-3 gap-6">
+    <!-- Card 1: Home Loans -->
+    <article class="card-loan rounded-2xl border p-8 transition hover:-translate-y-1" style="border-color:var(--navy-line);">
+      <div class="w-14 h-14 rounded-xl flex items-center justify-center text-2xl mb-6" style="background:rgba(96,165,250,0.12);">🏠</div>
+      <h3 class="font-display text-xl text-white">Home Loans</h3>
+      <p class="text-white/55 mt-3 text-sm leading-relaxed">Own your dream home with simple documentation and faster approvals from multiple partner banks.</p>
+      <div class="mt-6 pt-6 border-t flex justify-between items-center text-xs font-semibold text-white/45" style="border-color:var(--navy-line);">
+        <span>Rates from 8.40%*</span>
+        <a href="#apply" class="text-[var(--gold-light)] hover:underline">Apply →</a>
+      </div>
+    </article>
+
+    <!-- Card 2: Personal Loans -->
+    <article class="card-loan rounded-2xl border p-8 transition hover:-translate-y-1" style="border-color:var(--navy-line);">
+      <div class="w-14 h-14 rounded-xl flex items-center justify-center text-2xl mb-6" style="background:rgba(52,211,153,0.12);">💼</div>
+      <h3 class="font-display text-xl text-white">Personal Loans</h3>
+      <p class="text-white/55 mt-3 text-sm leading-relaxed">Instant funds for medical needs, weddings, travel, or any urgent personal expense.</p>
+      <div class="mt-6 pt-6 border-t flex justify-between items-center text-xs font-semibold text-white/45" style="border-color:var(--navy-line);">
+        <span>Rates from 10.50%*</span>
+        <a href="#apply" class="text-[var(--gold-light)] hover:underline">Apply →</a>
+      </div>
+    </article>
+
+    <!-- Card 3: Business Loans -->
+    <article class="card-loan rounded-2xl border p-8 transition hover:-translate-y-1" style="border-color:var(--navy-line);">
+      <div class="w-14 h-14 rounded-xl flex items-center justify-center text-2xl mb-6" style="background:rgba(194,166,73,0.15);">📈</div>
+      <h3 class="font-display text-xl text-white">Business Loans</h3>
+      <p class="text-white/55 mt-3 text-sm leading-relaxed">Expand your business, invest in machinery, or boost working capital efficiently.</p>
+      <div class="mt-6 pt-6 border-t flex justify-between items-center text-xs font-semibold text-white/45" style="border-color:var(--navy-line);">
+        <span>Rates from 12.00%*</span>
+        <a href="#apply" class="text-[var(--gold-light)] hover:underline">Apply →</a>
+      </div>
+    </article>
+
+    <!-- Card 4: LAP -->
+    <article class="card-loan rounded-2xl border p-8 transition hover:-translate-y-1" style="border-color:var(--navy-line);">
+      <div class="w-14 h-14 rounded-xl flex items-center justify-center text-2xl mb-6" style="background:rgba(248,113,113,0.12);">🏢</div>
+      <h3 class="font-display text-xl text-white">Loan Against Property</h3>
+      <p class="text-white/55 mt-3 text-sm leading-relaxed">Unlock the value of your property for large expenses without selling your asset.</p>
+      <div class="mt-6 pt-6 border-t flex justify-between items-center text-xs font-semibold text-white/45" style="border-color:var(--navy-line);">
+        <span>Rates from 9.75%*</span>
+        <a href="#apply" class="text-[var(--gold-light)] hover:underline">Apply →</a>
+      </div>
+    </article>
+
+    <!-- Card 5: Education Loans -->
+    <article class="card-loan rounded-2xl border p-8 transition hover:-translate-y-1" style="border-color:var(--navy-line);">
+      <div class="w-14 h-14 rounded-xl flex items-center justify-center text-2xl mb-6" style="background:rgba(167,139,250,0.12);">🎓</div>
+      <h3 class="font-display text-xl text-white">Education Loans</h3>
+      <p class="text-white/55 mt-3 text-sm leading-relaxed">Fund higher studies in India or abroad with flexible repayment after your course.</p>
+      <div class="mt-6 pt-6 border-t flex justify-between items-center text-xs font-semibold text-white/45" style="border-color:var(--navy-line);">
+        <span>Rates from 9.00%*</span>
+        <a href="#apply" class="text-[var(--gold-light)] hover:underline">Apply →</a>
+      </div>
+    </article>
+
+    <!-- Card 6: Vehicle Loans -->
+    <article class="card-loan rounded-2xl border p-8 transition hover:-translate-y-1" style="border-color:var(--navy-line);">
+      <div class="w-14 h-14 rounded-xl flex items-center justify-center text-2xl mb-6" style="background:rgba(251,191,36,0.12);">🚗</div>
+      <h3 class="font-display text-xl text-white">Vehicle Loans</h3>
+      <p class="text-white/55 mt-3 text-sm leading-relaxed">Drive home your car or two-wheeler with quick approvals and low down payments.</p>
+      <div class="mt-6 pt-6 border-t flex justify-between items-center text-xs font-semibold text-white/45" style="border-color:var(--navy-line);">
+        <span>Rates from 8.90%*</span>
+        <a href="#apply" class="text-[var(--gold-light)] hover:underline">Apply →</a>
+      </div>
+    </article>
+  </div>
+</main>
+
+<div class="max-w-6xl mx-auto px-6"><div class="divider-emblem"></div></div>
+
+<!-- ABOUT US SECTION -->
+<section id="about" class="max-w-6xl mx-auto py-20 px-6 scroll-mt-24">
+  <div class="grid md:grid-cols-2 gap-14 items-center">
+    <div>
+      <span class="text-xs font-semibold tracking-[0.2em] text-[var(--gold-light)] uppercase">About Us</span>
+      <h2 class="font-display text-3xl md:text-5xl text-white mt-3 leading-tight">
+        How Capsiddhi Became<br>
+        <span class="text-transparent bg-clip-text" style="background-image:linear-gradient(90deg,var(--gold),var(--gold-light)); -webkit-background-clip:text;">Capsiddhi.</span>
+      </h2>
+      <p class="text-white/65 mt-6 leading-relaxed">
+        Our journey started with a simple vision: to simplify the complex world of loans for everyday people and growing businesses. Today, Capsiddhi stands as a premier financial facilitator in India.
+      </p>
+      <p class="text-white/50 mt-4 text-sm leading-relaxed">
+        We bridge the gap between India's most trusted banking institutions and you, ensuring transparent terms, competitive interest rates, and seamless processing. Beyond numbers, we believe in the philosophy of <strong>Siddhi</strong> — the ultimate realization of your financial goals.
+      </p>
+    </div>
+    
+    <!-- CHANGED FROM "LAUNCHED TODAY" TO "100% PAPERLESS PROCESS" -->
+    <div class="grid grid-cols-2 gap-6">
+      <div class="p-6 rounded-2xl border" style="border-color:var(--navy-line); background:rgba(255,255,255,0.01);">
+        <span class="font-display text-4xl text-[var(--gold-light)] font-bold">100%</span>
+        <h4 class="text-white font-semibold mt-2">Paperless Process</h4>
+        <p class="text-white/40 text-xs mt-1">Completely digital document handling.</p>
+      </div>
+      <div class="p-6 rounded-2xl border" style="border-color:var(--navy-line); background:rgba(255,255,255,0.01);">
+        <span class="font-display text-4xl text-[var(--gold-light)] font-bold">₹0</span>
+        <h4 class="text-white font-semibold mt-2">Processing Fee*</h4>
+        <p class="text-white/40 text-xs mt-1">No upfront consultation charges.</p>
+      </div>
+      <div class="p-6 rounded-2xl border" style="border-color:var(--navy-line); background:rgba(255,255,255,0.01);">
+        <span class="font-display text-4xl text-[var(--gold-light)] font-bold">Multi</span>
+        <h4 class="text-white font-semibold mt-2">Bank Options</h4>
+        <p class="text-white/40 text-xs mt-1">Connecting you to right lenders.</p>
+      </div>
+      <div class="p-6 rounded-2xl border" style="border-color:var(--navy-line); background:rgba(255,255,255,0.01);">
+        <span class="font-display text-4xl text-[var(--gold-light)] font-bold">Direct</span>
+        <h4 class="text-white font-semibold mt-2">Expert Support</h4>
+        <p class="text-white/40 text-xs mt-1">Personalized loan guidance.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="max-w-6xl mx-auto px-6"><div class="divider-emblem"></div></div>
+
+<!-- WHY US -->
+<section id="why" class="max-w-6xl mx-auto py-20 px-6 scroll-mt-24">
+  <div class="grid md:grid-cols-2 gap-14 items-center">
+    <div>
+      <span class="text-xs font-semibold tracking-[0.2em] text-[var(--gold-light)] uppercase">Why Capsiddhi</span>
+      <h2 class="font-display text-3xl md:text-4xl text-white mt-3 leading-tight">Mastery in matching you<br>to the right lender</h2>
+      <p class="text-white/55 mt-4 leading-relaxed">We don't push one bank's product — we compare across our network and recommend what genuinely fits your profile and repayment comfort.</p>
+    </div>
+    <div class="space-y-5">
+      <div class="flex gap-4 items-start">
+        <div class="w-10 h-10 shrink-0 rounded-full flex items-center justify-center text-[var(--gold-light)] border" style="border-color:rgba(194,166,73,0.3); background:rgba(194,166,73,0.08);">✓</div>
+        <div><h4 class="text-white font-semibold">Unbiased comparison</h4><p class="text-white/50 text-sm mt-1">Rates and terms compared across multiple banking alternatives.</p></div>
+      </div>
+      <div class="flex gap-4 items-start">
+        <div class="w-10 h-10 shrink-0 rounded-full flex items-center justify-center text-[var(--gold-light)] border" style="border-color:rgba(194,166,73,0.3); background:rgba(194,166,73,0.08);">✓</div>
+        <div><h4 class="text-white font-semibold">Minimal paperwork</h4><p class="text-white/50 text-sm mt-1">Digital-first documentation with dedicated support at every step.</p></div>
+      </div>
+      <div class="flex gap-4 items-start">
+        <div class="w-10 h-10 shrink-0 rounded-full flex items-center justify-center text-[var(--gold-light)] border" style="border-color:rgba(194,166,73,0.3); background:rgba(194,166,73,0.08);">✓</div>
+        <div><h4 class="text-white font-semibold">No hidden charges</h4><p class="text-white/50 text-sm mt-1">Every fee is disclosed upfront before you commit to anything.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="max-w-6xl mx-auto px-6"><div class="divider-emblem"></div></div>
+
+<!-- CONTACT SECTION WITH UPDATED DETAILS -->
+<section id="contact" class="max-w-6xl mx-auto py-20 px-6 scroll-mt-24">
+  <div class="text-center max-w-2xl mx-auto mb-14">
+    <span class="text-xs font-semibold tracking-[0.2em] text-[var(--gold-light)] uppercase">Get in Touch</span>
+    <h2 class="font-display text-3xl md:text-4xl text-white mt-3">We'd love to hear from you</h2>
+    <p class="text-white/55 mt-3">Reach out to our financial experts directly for any queries.</p>
+  </div>
+
+  <div class="grid md:grid-cols-3 gap-8 text-center">
+    <!-- Updated Phone Number -->
+    <div class="p-8 rounded-2xl border flex flex-col items-center" style="border-color:var(--navy-line); background:rgba(255,255,255,0.02);">
+      <div class="w-12 h-12 rounded-full flex items-center justify-center text-xl mb-4 bg-white/5 text-[var(--gold-light)]">📞</div>
+      <h4 class="text-white font-semibold text-lg">Call Support</h4>
+      <p class="text-white/50 text-sm mt-2">Mon-Sat from 9:30 AM to 6:30 PM</p>
+      <a href="tel:+919135677291" class="text-white hover:text-[var(--gold-light)] font-medium text-lg mt-4 block transition">+91 91356 77291</a>
+    </div>
+
+    <!-- Updated Email Address -->
+    <div class="p-8 rounded-2xl border flex flex-col items-center" style="border-color:var(--navy-line); background:rgba(255,255,255,0.02);">
+      <div class="w-12 h-12 rounded-full flex items-center justify-center text-xl mb-4 bg-white/5 text-[var(--gold-light)]">✉️</div>
+      <h4 class="text-white font-semibold text-lg">Email Inquiry</h4>
+      <p class="text-white/50 text-sm mt-2">We respond within 24 business hours</p>
+      <a href="mailto:Finance@capsiddhi.com" class="text-white hover:text-[var(--gold-light)] font-medium text-lg mt-4 block transition">Finance@capsiddhi.com</a>
+    </div>
+
+    <!-- Office Address -->
+    <div class="p-8 rounded-2xl border flex flex-col items-center" style="border-color:var(--navy-line); background:rgba(255,255,255,0.02);">
+      <div class="w-12 h-12 rounded-full flex items-center justify-center text-xl mb-4 bg-white/5 text-[var(--gold-light)]">📍</div>
+      <h4 class="text-white font-semibold text-lg">Our Location</h4>
+      <p class="text-white/50 text-sm mt-2">Visit us for premium consultation</p>
+      <p class="text-white font-medium text-sm mt-4 leading-relaxed">Vellore, Tamil Nadu, India</p>
+    </div>
+  </div>
+</section>
+
+<div class="max-w-6xl mx-auto px-6"><div class="divider-emblem"></div></div>
+
+<!-- FAQ -->
+<section id="faq" class="max-w-4xl mx-auto py-20 px-6 scroll-mt-24">
+  <div class="text-center mb-12">
+    <span class="text-xs font-semibold tracking-[0.2em] text-[var(--gold-light)] uppercase">FAQ</span>
+    <h2 class="font-display text-3xl md:text-4xl text-white mt-3">Frequently Asked Questions</h2>
+    <p class="text-white/55 mt-3">Quick answers to your common queries.</p>
+  </div>
+
+  <div class="space-y-4 max-w-3xl mx-auto">
+    <div class="border rounded-xl p-6" style="border-color:var(--navy-line); background:rgba(255,255,255,0.02);">
+      <h4 class="text-white font-semibold">What documents are required to apply?</h4>
+      <p class="text-white/50 text-sm mt-2">Basic KYC (PAN, [Aadhaar Redacted]), income proof (salary slips or business ITR), and bank statements for the last 6 months.</p>
+    </div>
+    <div class="border rounded-xl p-6" style="border-color:var(--navy-line); background:rgba(255,255,255,0.02);">
+      <h4 class="text-white font-semibold">How long does the approval process take?</h4>
+      <p class="text-white/50 text-sm mt-2">Personal and business loans can get approved within 24 to 48 hours. Home loans or LAP might take 3 to 7 working days depending on property verification.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[#071120] text-gray-400 py-16 px-6 border-t text-center" style="border-color:var(--navy-line);">
+  <div class="max-w-6xl mx-auto space-y-4">
+    <p class="text-sm">&copy; 2026 Capsiddhi Financial Services. All Rights Reserved.</p>
+    <p class="text-white text-xs font-semibold tracking-wider">™️ Registered Trademark of Capsiddhi Financial Services.</p>
+    <p class="text-[10px] text-gray-500 max-w-xl mx-auto leading-relaxed">
+      Disclaimer: Interest rates mentioned are subject to change as per bank policies. We act as an authorized loan distributor channel partner.
+    </p>
+  </div>
+</footer>
+
+<!-- JS SCRIPT -->
+<script>
+  window.addEventListener('load', function() {
+      const preloader = document.getElementById('preloader');
+      if (preloader) {
+          preloader.style.opacity = '0';
+          setTimeout(() => {
+              preloader.style.visibility = 'hidden';
+          }, 500);
+      }
+  });
+
+  const loanForm = document.getElementById('loanForm');
+  const successMessage = document.getElementById('successMessage');
+  const userNameSpan = document.getElementById('userName');
+  const selectedLoanSpan = document.getElementById('selectedLoan');
+  const userPhoneSpan = document.getElementById('userPhone');
+
+  
+  if (loanForm) {
+      loanForm.addEventListener('submit', function(event) {
+          event.preventDefault();
+
+          const submitButton = document.getElementById('submitBtn');
+          const originalButtonText = submitButton ? submitButton.textContent : "Get Free Consultation →";
+          
+          if (submitButton) {
+              submitButton.disabled = true;
+              submitButton.textContent = "Connecting securely...";
+          }
+
+          const name = document.getElementById('fullName').value;
+          const mobile = document.getElementById('mobileNumber').value;
+          const amount = document.getElementById('loanAmount').value;
+          const loanType = document.getElementById('loanType').value;
+          const formData = {
+    fullName: name,
+    mobileNumber: mobile,
+    loanAmount: amount,
+    loanType: loanType
+};
+    
+
+         fetch("http://localhost:5000/api/leads", {
+              method: 'POST',
+             
+              headers: {
+                  'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(formData)
+          })
+          .then(async (response) => {
+    const result = await response.json();
+
+    if (!result.success) {
+        throw new Error(result.message);
+    }
+              if (userNameSpan) userNameSpan.textContent = name;
+              if (selectedLoanSpan) selectedLoanSpan.textContent = loanType;
+              if (userPhoneSpan) userPhoneSpan.textContent = mobile;
+
+              loanForm.classList.add('hidden');
+              if (successMessage) successMessage.classList.remove('hidden');
+          })
+          .catch(error => {
+              console.error('Submission Error:', error);
+              alert("Something went wrong with the secure upload. Please try again!");
+          })
+          .finally(() => {
+              if (submitButton) {
+                  submitButton.disabled = false;
+                  submitButton.textContent = originalButtonText;
+              }
+          });
+      });
+  }
+
+  const resetBtn = document.getElementById('resetBtn');
+  if (resetBtn) {
+      resetBtn.addEventListener('click', function() {
+          if (loanForm && successMessage) {
+              loanForm.reset();
+              loanForm.classList.remove('hidden');
+              successMessage.classList.add('hidden');
+          }
+      });
+  }
+</script>
+
+</body>
+</html>
