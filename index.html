@@ -62,6 +62,66 @@
     display:flex; align-items:center; justify-content:center;
     transition:opacity .5s ease, visibility .5s ease;
   }
+  
+#preloader.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.brand-intro {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 20px;
+  animation: brand-arrive 0.8s ease both;
+}
+
+.intro-logo {
+  width: 76px;
+  height: 76px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: contain;
+  border: 1.5px solid rgba(194, 166, 73, 0.7);
+  padding: 4px;
+  animation: logo-shimmer 1.8s ease-in-out 1;
+}
+
+.intro-name {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.intro-title {
+  color: #fff;
+  font-family: 'Fraunces', serif;
+  font-size: 29px;
+  font-weight: 600;
+}
+
+.intro-subtitle {
+  color: var(--gold-light);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+@keyframes brand-arrive {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes logo-shimmer {
+  0%, 100% {
+    filter: drop-shadow(0 0 5px rgba(194, 166, 73, 0.18));
+  }
+  50% {
+    filter: drop-shadow(0 0 16px rgba(232, 204, 120, 0.65));
+  }
+}
+
 
   .focus-gold:focus-visible{ outline:2px solid var(--gold); outline-offset:2px; }
 
@@ -78,18 +138,24 @@
 </head>
 <body class="text-ivory antialiased overflow-x-hidden" style="color:#eef1f6;">
 
-<!-- PRELOADER -->
-<div id="preloader" aria-hidden="true">
-  <div class="flex flex-col items-center gap-4">
-    <svg class="emblem-glow" width="56" height="56" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M50 4 L92 50 L50 96 L8 50 Z" stroke="#c2a649" stroke-width="2.5"/>
-      <path d="M50 22 C66 22 78 34 78 50 C78 66 66 78 50 78" stroke="#e8cc78" stroke-width="3" stroke-linecap="round"/>
-      <circle cx="50" cy="50" r="6" fill="#c2a649"/>
-    </svg>
-    <span class="font-display text-lg tracking-[0.2em] text-white/90 uppercase">Capsiddhi</span>
+
+<!-- PREMIUM BRAND INTRO -->
+<div id="preloader" aria-label="Capsiddhi Digital Services">
+  <div class="brand-intro">
+    <img
+      src="/Title_logo.jpeg"
+      alt="Capsiddhi logo"
+      class="intro-logo"
+    />
+
+    <div class="intro-name">
+      <span class="intro-title">Capsiddhi</span>
+      <span class="intro-subtitle">Digital Services</span>
+    </div>
   </div>
 </div>
 
+  
 <!-- AMBIENT BACKGROUND -->
 <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
   <div class="wave-1 absolute -top-32 -left-32 w-[560px] h-[560px] rounded-full blur-[130px] opacity-30" style="background:radial-gradient(circle,#123a6e,transparent 70%)"></div>
@@ -104,7 +170,7 @@
   <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
     <a href="#" class="flex items-center gap-3 focus-gold rounded">
 <img
-  src="/capsiddhi-logo.png"
+  src="/Title_logo.jpeg"
   alt="Capsiddhi Digital Services Logo"
   class="w-16 h-16 object-contain"
 />
@@ -451,15 +517,15 @@
 
 <!-- JS SCRIPT -->
 <script>
-  window.addEventListener('load', function() {
-      const preloader = document.getElementById('preloader');
-      if (preloader) {
-          preloader.style.opacity = '0';
-          setTimeout(() => {
-              preloader.style.visibility = 'hidden';
-          }, 500);
-      }
-  });
+ 
+window.addEventListener('load', function() {
+    const preloader = document.getElementById('preloader');
+    if (!preloader) return;
+
+    setTimeout(() => {
+        preloader.classList.add('is-hidden');
+    }, 1800);
+});
 
   const loanForm = document.getElementById('loanForm');
   const successMessage = document.getElementById('successMessage');
